@@ -1,0 +1,111 @@
+@media (min-width: 0px) {
+    .mainDiv {
+        width: calc(100vw - 1rem);
+    }
+}
+
+@media (min-width: 200px) {
+    .mainDiv {
+        width: 90vw;
+    }
+}
+
+.mainDiv{
+    margin-left: auto!important;
+    margin-right: auto!important;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+
+@media (min-width: 0px) {
+    .charCard {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 300px) {
+    .charCard {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.charCard{
+    cursor: pointer;
+    justify-content: start;
+    padding: 0.5rem;
+    overflow: hidden;
+}
+
+.charImgDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.charImg{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+@media (min-width: 0px) {
+    .charImg {
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+}
+
+@media (min-width: 300px) {
+    .charImg {
+        margin-left: none;
+        margin-right: none;
+    }
+    .charName{
+        margin-left: none!important;
+        margin-right: none!important;
+    }
+}
+
+.charName{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 0px) {
+    .additionalInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .additionalInfo{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        font-size: 1.5rem;
+    }
+}
+
+.infoIcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.borderDiv{
+    width: 100%;
+    border: 1px solid gray;
+}
