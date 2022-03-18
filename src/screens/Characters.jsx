@@ -11,7 +11,7 @@ const Characters = () => {
     const [totalChars, setTotalChars] = useState(0);
     const [currentPage, setCurrentPage] = useState(1);
     const [totalPages, setTotalPages] = useState(0);
-    const [searchInput, setSearchInput] = useState("")
+    const [searchInput, setSearchInput] = useState("");
 
     const [showFrom, setshowFrom] = useState(0);
     const [showTo, setShowTo] = useState(0);
@@ -82,16 +82,14 @@ const Characters = () => {
         onChange={handleChangeSearchInput}
         placeholder="Search Character"
         />
+        
         {
             filteredCharacters.slice(showFrom, showTo).map((character) => {
                 return(
                     <div key={character.id * 1000} onClick={() => goToCharacter(character.url)}>
                         <CharacterCard
                         key={character.id}
-                        image={character.image}
-                        name={character.name}
-                        status={character.status}
-                        species={character.species}
+                        info={character}
                         />
                     </div>
                 )
@@ -105,6 +103,7 @@ const Characters = () => {
         paginationHandler={paginationHandler}
         from={showFrom}
         to={showTo}
+        showing="Characters"
         />
     </div>
   )

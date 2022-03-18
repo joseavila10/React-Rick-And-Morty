@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './styles/pagination.css';
 
 const Pagination = (props) => {
@@ -35,7 +35,7 @@ const Pagination = (props) => {
             </div>
         </div>
         <div className="paginationShowing">
-            Mostrando {props.to - props.from} de {props.totalChars} Personajes
+            Showeing {props.to - props.from} of {props.totalChars} {props.showing}
         </div>
     </div>
   )

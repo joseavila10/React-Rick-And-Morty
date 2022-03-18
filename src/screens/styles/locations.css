@@ -1,0 +1,26 @@
+.searchInput{
+    margin: 2rem auto 2rem auto!important;
+    max-width: 30rem;
+}
+
+@media (min-width: 0px) {
+    .locationMainDiv {
+        width: calc(100vw - 1rem);
+    }
+}
+
+@media (min-width: 200px) {
+    .locationMainDiv {
+        width: 90vw;
+    }
+}
+
+.locationMainDiv{
+    font-size: 1.5rem;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}

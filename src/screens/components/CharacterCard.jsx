@@ -2,15 +2,15 @@ import React from 'react';
 import './styles/characterCard.css';
 
 const CharacterCard = (props) => {
-    const statusIconPath = props.status === "Alive" ? "/icons/heart.svg" : props.status === "Dead" ? "/icons/dead_skull.svg" : "/icons/question.svg"
+    const statusIconPath = props.info.status === "Alive" ? "/icons/heart.svg" : props.info.status === "Dead" ? "/icons/dead_skull.svg" : "/icons/question.svg"
 
   return (
     <div className="mainDiv">
         <div className="charCard">
                 <div className='charImgDiv'>
-                    <img className="charImg" src={props.image} alt="character" />
+                    <img className="charImg" src={props.info.image} alt="character" />
                 </div>
-                <div className='charName'>{props.name}</div>
+                <div className='charName'>{props.info.name}</div>
         </div>
         <div className="borderDiv"></div>
         <div className="additionalInfo">
@@ -21,7 +21,7 @@ const CharacterCard = (props) => {
                 </div>
             </div>
             <div>
-                Species: {props.species}
+                Species: {props.info.species}
             </div>
         </div>
     </div>
