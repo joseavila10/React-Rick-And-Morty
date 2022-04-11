@@ -42,7 +42,7 @@ const Episodes = () => {
 
   useEffect(() => { //To slice locations to show them according to pagination
     let from = (currentPage - 1) * 10;
-    let to = currentPage * 10 <=totalLocations ? currentPage * 10 :totalLocations;
+    let to = currentPage * 10 <= totalLocations ? currentPage * 10 :totalLocations;
     setshowFrom(from);
     setShowTo(to);
   }, [currentPage,totalLocations]);
@@ -98,14 +98,14 @@ const Episodes = () => {
         }
 
       <Pagination
-        currentPage={currentPage}
-        totalPages={totalPages}
-        totalChars={totalLocations}
-        paginationHandler={paginationHandler}
-        from={showFrom}
-        to={showTo}
-        showing="Locations"
-        />
+      currentPage={currentPage}
+      totalPages={totalPages}
+      totalChars={totalLocations}
+      paginationHandler={paginationHandler}
+      from={showFrom}
+      to={showTo}
+      showing="Locations"
+      />
     </div>
   )
 }
