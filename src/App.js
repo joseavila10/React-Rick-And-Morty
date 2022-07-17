@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from './screens/Home';
+import Home from './modules/home/containers/Home';
 import Characters from './screens/Characters';
 import Location from './screens/Locations';
 import Episodes from './screens/Episodes';

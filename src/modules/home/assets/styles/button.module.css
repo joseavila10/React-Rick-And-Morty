@@ -1,0 +1,30 @@
+@media (min-width: 0px){
+    .mainDiv{
+        width: 60vw;
+        height: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 6vw;
+        color: #FFFFFF;
+        border: 1px solid #000000;
+        border-radius: 2.5vw;
+        background-color: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        user-select: none;
+        margin: 2vw 0vw 2vw 0vw;
+    }
+    .mainDiv:hover{
+        background-color: rgba(0, 0, 0, 1);
+        border: 1px solid #FFFFFF;
+    }
+}
+
+@media (min-width: 768px){
+    .mainDiv{
+        width: 30vw;
+        height: 5vw;
+        border-radius: 1vw;
+        font-size: 3vw;
+    }
+}
