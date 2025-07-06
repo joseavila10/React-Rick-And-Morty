@@ -6,6 +6,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './modules/home/containers/Home';
 import CharactersContainer from './modules/characters/CharactersContainer';
+import EpisodesContainer from './modules/episodes/EpisodesContainer';
 
 
 function App() {
@@ -14,8 +15,8 @@ function App() {
       <Routes>
         <Route exact path="/" element={ <Home /> }/>
         <Route exact path="/characters" element={ <CharactersContainer /> }/>
-        {/* <Route exact path="/locations" element={ <Location /> }/>
-        <Route exact path="/episodes" element={ <Episodes /> }/> */}
+        <Route exact path="/episodes" element={ <EpisodesContainer /> }/>
+        {/* <Route exact path="/locations" element={ <Location /> }/> */}
       </Routes>
     </Router>
 
